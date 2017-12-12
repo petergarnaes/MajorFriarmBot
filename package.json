@@ -1,0 +1,15 @@
+{
+  "name": "klub1007",
+  "version": "1.0.0",
+  "description": "",
+  "main": "API_crawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Garnæs",
+  "license": "MIT",
+  "dependencies": {
+    "markov-chains-text": "^1.0.0",
+    "node-fetch": "^1.7.3"
+  }
+}
