@@ -1,14 +1,15 @@
 let fetch = require('node-fetch');
 let fs = require('fs');
 
-let token = 'EAACEdEose0cBAFZAZCYf0SFhJpTDYbWcr4ZC7oz8dg13RFegXonrHuAgKlIoXkEtuvSyToZASMEhaxPxIJ95kAdvmtoBDEWhwAk10V7y591OzlIZA2AgHm7vqjl7wZAe28PEgZCownJzEpTYS4fl9Prvg7uLiBQ96ZCs4lPf26ZAmpxVN5ZAcGJAUBdAAmf0xgmrryJ1TaJ54I2AZDZD';
+let token = (""+fs.readFileSync('token')).replace(/\n/,"");
+console.log(token);
 let limit = 150;
 
 let args = '?access_token='+token+'&fields=id,message,comments{message}&format=json&method=get&pretty=0&suppress_http_code=1&limit=150';
 let api_version = '2.11';
 let baseUrl = 'https://graph.facebook.com';
 let url = baseUrl+'/181665176189/feed'+args;
-
+console.log(url)
 let result = [];
 
 let currentPage = url;
