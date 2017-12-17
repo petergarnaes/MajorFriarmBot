@@ -17,6 +17,4 @@ let document = messages.map((o)=>{
 
 const fakePenthouse = new Text(penhouse);
 
-const sentence = fakePenthouse.makeSentence();
- 
-console.log(sentence);
+module.exports = () => fakePenthouse.makeSentence();
